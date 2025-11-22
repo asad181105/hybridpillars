@@ -62,7 +62,7 @@ export function Contact() {
             Get Started Today
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Ready to transform your workflow? Let's discuss how our AI agents can help your business.
+            Ready to transform your workflow? Let&apos;s discuss how our AI agents can help your business.
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export function Contact() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white">Let's Connect</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white">Let&apos;s Connect</h3>
             <p className="text-red-100 mb-8">
                 Schedule a demo or reach out to learn more about how hybridpillars can automate your business workflows.
               </p>

@@ -108,7 +108,7 @@ export default function GetInTouchPage() {
                   <div>
                     <p className="text-sm text-white/50">Need NDA first?</p>
                     <p className="text-base font-semibold text-white">
-                      We'll send one immediately
+                      We&apos;ll send one immediately
                     </p>
                   </div>
                 </div>
