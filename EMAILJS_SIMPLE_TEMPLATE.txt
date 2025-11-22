@@ -1,0 +1,23 @@
+===========================================
+NEW FORM SUBMISSION - hybridpillars
+===========================================
+
+FORM TYPE: {{type}}
+SUBMITTED: {{timestamp}}
+
+CONTACT INFORMATION:
+-------------------
+Name: {{from_name}}
+Email: {{from_email}}
+Company: {{company}}
+
+RESPONSE URGENCY: {{urgency}}
+
+MESSAGE / QUERY:
+---------------
+{{message}}
+
+===========================================
+Reply directly to: {{from_email}}
+===========================================
+
