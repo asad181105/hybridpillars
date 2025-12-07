@@ -60,10 +60,10 @@ export default function GetInTouchPage() {
       <Navbar variant="static" />
 
       <section className="mx-auto max-w-5xl px-4 pb-24 pt-20">
-        <div className="rounded-3xl border border-red-500/60 bg-black/40 p-10 shadow-[0_25px_100px_rgba(248,113,113,0.45)] backdrop-blur-md">
+        <div className="rounded-3xl border border-blue-500/60 bg-black/40 p-10 shadow-[0_25px_100px_rgba(59,130,246,0.45)] backdrop-blur-md">
           <div className="flex flex-col gap-10 lg:flex-row">
             <div className="flex-1">
-              <span className="inline-flex items-center rounded-full bg-red-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-red-200">
+              <span className="inline-flex items-center rounded-full bg-blue-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-blue-200">
                 Immediate response
               </span>
               <h1 className="mt-6 text-4xl font-bold md:text-5xl">
@@ -76,8 +76,8 @@ export default function GetInTouchPage() {
               </p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-2">
-                <div className="flex items-center gap-3 rounded-2xl border border-red-500/60 bg-black/40 p-4">
-                  <MessageCircle className="h-10 w-10 text-red-300" />
+                <div className="flex items-center gap-3 rounded-2xl border border-blue-500/60 bg-black/40 p-4">
+                  <MessageCircle className="h-10 w-10 text-blue-300" />
                   <div>
                     <p className="text-sm text-white/50">Live chat</p>
                     <p className="text-base font-semibold text-white">
@@ -85,8 +85,8 @@ export default function GetInTouchPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-2xl border border-red-500/60 bg-black/40 p-4">
-                  <PhoneCall className="h-10 w-10 text-red-300" />
+                <div className="flex items-center gap-3 rounded-2xl border border-blue-500/60 bg-black/40 p-4">
+                  <PhoneCall className="h-10 w-10 text-blue-300" />
                   <div>
                     <p className="text-sm text-white/50">Priority hotline</p>
                     <p className="text-base font-semibold text-white">
@@ -94,8 +94,8 @@ export default function GetInTouchPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-2xl border border-red-500/60 bg-black/40 p-4">
-                  <Clock className="h-10 w-10 text-red-300" />
+                <div className="flex items-center gap-3 rounded-2xl border border-blue-500/60 bg-black/40 p-4">
+                  <Clock className="h-10 w-10 text-blue-300" />
                   <div>
                     <p className="text-sm text-white/50">Average response</p>
                     <p className="text-base font-semibold text-white">
@@ -103,8 +103,8 @@ export default function GetInTouchPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-2xl border border-red-500/60 bg-black/40 p-4">
-                  <Send className="h-10 w-10 text-red-300" />
+                <div className="flex items-center gap-3 rounded-2xl border border-blue-500/60 bg-black/40 p-4">
+                  <Send className="h-10 w-10 text-blue-300" />
                   <div>
                     <p className="text-sm text-white/50">Need NDA first?</p>
                     <p className="text-base font-semibold text-white">
@@ -132,7 +132,7 @@ export default function GetInTouchPage() {
                   onChange={(event) =>
                     setFormData((prev) => ({ ...prev, name: event.target.value }))
                   }
-                  className="mt-2 w-full rounded-xl border border-red-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
+                  className="mt-2 w-full rounded-xl border border-blue-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                   placeholder="Jane Doe"
                 />
               </div>
@@ -150,7 +150,7 @@ export default function GetInTouchPage() {
                       email: event.target.value,
                     }))
                   }
-                  className="mt-2 w-full rounded-xl border border-red-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
+                  className="mt-2 w-full rounded-xl border border-blue-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                   placeholder="jane@company.com"
                 />
               </div>
@@ -165,7 +165,7 @@ export default function GetInTouchPage() {
                   onChange={(event) =>
                     setFormData((prev) => ({ ...prev, topic: event.target.value }))
                   }
-                  className="mt-2 w-full rounded-xl border border-red-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
+                  className="mt-2 w-full rounded-xl border border-blue-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                   placeholder="Share context, links, or questions..."
                 />
               </div>
@@ -181,7 +181,7 @@ export default function GetInTouchPage() {
                       urgency: event.target.value,
                     }))
                   }
-                  className="mt-2 w-full rounded-xl border border-red-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
+                  className="mt-2 w-full rounded-xl border border-blue-500/60 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                 >
                   <option value="Within 1 hour">Within 1 hour</option>
                   <option value="ASAP (call me)">ASAP (call me)</option>
@@ -195,7 +195,7 @@ export default function GetInTouchPage() {
                 disabled={isSubmitting}
                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-                className="w-full rounded-full bg-red-600 px-6 py-4 text-sm font-semibold text-white shadow-[0_20px_50px_rgba(248,113,113,0.45)] transition hover:bg-red-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full rounded-full bg-blue-600 px-6 py-4 text-sm font-semibold text-white shadow-[0_20px_50px_rgba(59,130,246,0.45)] transition hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Sending..." : "Notify the rapid response team"}
               </motion.button>

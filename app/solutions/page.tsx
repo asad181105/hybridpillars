@@ -42,7 +42,7 @@ export default function SolutionsPage() {
 
       <section className="mx-auto max-w-6xl px-4 pb-24 pt-20">
         <div className="max-w-3xl">
-          <p className="inline-flex items-center rounded-full bg-red-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-red-200">
+          <p className="inline-flex items-center rounded-full bg-blue-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-blue-200">
             Solutions
           </p>
           <h1 className="mt-6 text-4xl font-bold md:text-5xl">
@@ -60,7 +60,7 @@ export default function SolutionsPage() {
           {solutions.map((solution) => (
             <div
               key={solution.title}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_20px_80px_rgba(248,113,113,0.35)] backdrop-blur-sm"
+              className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_20px_80px_rgba(59,130,246,0.35)] backdrop-blur-sm"
             >
               <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-500 hover:opacity-70" />
               <h2 className="text-2xl font-semibold">{solution.title}</h2>
@@ -68,7 +68,7 @@ export default function SolutionsPage() {
               <ul className="mt-6 space-y-3 text-sm text-white/80">
                 {solution.highlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3">
-                    <CheckCircle className="mt-0.5 h-4 w-4 text-red-300" />
+                    <CheckCircle className="mt-0.5 h-4 w-4 text-blue-300" />
                     <span>{highlight}</span>
                   </li>
                 ))}

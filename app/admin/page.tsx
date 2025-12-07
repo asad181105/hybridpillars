@@ -81,7 +81,7 @@ export default function AdminDashboard() {
       
       <div className="container mx-auto px-4 py-12 pt-24">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Admin Dashboard
           </h1>
           <p className="text-gray-400">Manage queries, sales, and leads</p>
@@ -96,7 +96,7 @@ export default function AdminDashboard() {
           >
             <div className="flex items-center justify-between mb-2">
               <span className="text-gray-400 text-sm">Total Submissions</span>
-              <FileText className="w-5 h-5 text-red-400" />
+              <FileText className="w-5 h-5 text-blue-400" />
             </div>
             <p className="text-3xl font-bold">{stats.total}</p>
           </motion.div>
@@ -149,7 +149,7 @@ export default function AdminDashboard() {
             <select
               value={filter}
               onChange={(e) => setFilter(e.target.value as any)}
-              className="px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-red-500"
+              className="px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-blue-500"
             >
               <option value="all">All</option>
               <option value="new">New</option>
@@ -164,7 +164,7 @@ export default function AdminDashboard() {
             <select
               value={typeFilter}
               onChange={(e) => setTypeFilter(e.target.value as any)}
-              className="px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-red-500"
+              className="px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-blue-500"
             >
               <option value="all">All</option>
               <option value="contact">Contact</option>
@@ -219,7 +219,7 @@ export default function AdminDashboard() {
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getStatusColor(submission.status)}`}>
                           {submission.status || 'new'}
                         </span>
-                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/50">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-400 border border-blue-500/50">
                           {submission.type}
                         </span>
                       </div>
@@ -248,7 +248,7 @@ export default function AdminDashboard() {
                       <select
                         value={submission.status || 'new'}
                         onChange={(e) => handleStatusChange(submission.id, e.target.value as FormSubmission['status'])}
-                        className="flex-1 px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white text-sm focus:outline-none focus:border-red-500"
+                        className="flex-1 px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white text-sm focus:outline-none focus:border-blue-500"
                       >
                         <option value="new">New</option>
                         <option value="contacted">Contacted</option>
@@ -257,7 +257,7 @@ export default function AdminDashboard() {
                       </select>
                       <button
                         onClick={() => handleDelete(submission.id)}
-                        className="px-3 py-2 rounded-lg bg-red-500/20 border border-red-500/50 text-red-400 hover:bg-red-500/30 transition-colors"
+                        className="px-3 py-2 rounded-lg bg-blue-500/20 border border-blue-500/50 text-blue-400 hover:bg-blue-500/30 transition-colors"
                         title="Delete"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -265,7 +265,7 @@ export default function AdminDashboard() {
                     </div>
                     <a
                       href={`mailto:${submission.email}`}
-                      className="w-full px-4 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white text-sm font-semibold text-center transition-colors"
+                      className="w-full px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold text-center transition-colors"
                     >
                       Send Email
                     </a>

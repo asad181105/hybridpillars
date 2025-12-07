@@ -8,14 +8,14 @@ export function Footer() {
   return (
     <footer className="relative py-12 px-4 overflow-hidden border-t border-white/10">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-red-950/20 to-transparent">
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-blue-950/20 to-transparent">
         <div className="absolute inset-0">
           {[...Array(30)].map((_, i) => {
             const randomX = typeof window !== 'undefined' ? Math.random() * window.innerWidth : Math.random() * 1920;
             return (
               <motion.div
                 key={i}
-                className="absolute w-0.5 h-0.5 bg-red-400 rounded-full"
+                className="absolute w-0.5 h-0.5 bg-blue-400 rounded-full"
                 initial={{
                   x: randomX,
                   y: Math.random() * 200,
@@ -52,11 +52,11 @@ export function Footer() {
                 height={32}
                 className="object-contain"
               />
-              <span className="text-xl font-bold bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 hybridpillars
               </span>
             </motion.a>
-            <p className="text-red-200 text-sm">
+            <p className="text-blue-200 text-sm">
               Building the future of autonomous AI agents for businesses.
             </p>
           </div>
@@ -146,7 +146,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-red-200 text-sm">
+          <p className="text-blue-200 text-sm">
             © {new Date().getFullYear()} hybridpillars. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">

@@ -14,7 +14,7 @@ type AgentCategory = {
 const categories: AgentCategory[] = [
   {
     name: "HR",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "AI Hiring Assistant",
       "Exit Interview Agent",
@@ -29,7 +29,7 @@ const categories: AgentCategory[] = [
   },
   {
     name: "Marketing",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "Campaign Copy Generator",
       "Ad Performance Analyst",
@@ -40,7 +40,7 @@ const categories: AgentCategory[] = [
   },
   {
     name: "Sales",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "Pipeline Prioritization Agent",
       "Proposal Drafting Copilot",
@@ -50,7 +50,7 @@ const categories: AgentCategory[] = [
   },
   {
     name: "Customer Service",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "VoiceCare Agent",
       "Knowledge Base Curator",
@@ -60,7 +60,7 @@ const categories: AgentCategory[] = [
   },
   {
     name: "Banking",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "Fraud Alert Concierge",
       "Account Opening Guide",
@@ -70,7 +70,7 @@ const categories: AgentCategory[] = [
   },
   {
     name: "Insurance",
-    accent: "from-red-500 to-red-700",
+    accent: "from-blue-500 to-blue-700",
     agents: [
       "Claims Intake Agent",
       "Policy Recommendation Specialist",
@@ -99,7 +99,7 @@ export default function AgentsPage() {
 
       <section className="mx-auto max-w-5xl px-4 pb-16 pt-20">
         <div className="text-center">
-          <span className="inline-flex items-center rounded-full bg-red-600/20 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-red-200">
+          <span className="inline-flex items-center rounded-full bg-blue-600/20 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-blue-200">
             Prebuilt agents
           </span>
           <h1 className="mt-6 text-4xl font-bold md:text-5xl">
@@ -119,7 +119,7 @@ export default function AgentsPage() {
               onClick={() => setActiveCategory(category)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition-all ${
                 activeCategory.name === category.name
-                  ? "bg-gradient-to-r from-red-500 to-red-700 text-white shadow-lg shadow-red-500/40"
+                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg shadow-blue-500/40"
                   : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white"
               }`}
             >
@@ -140,7 +140,7 @@ export default function AgentsPage() {
               key={agent}
               href="/contact"
               whileHover={{ y: -4 }}
-              className="flex h-24 items-center justify-center rounded-3xl border border-white/10 bg-black/40 px-4 text-center text-sm font-semibold text-white shadow-[0_18px_40px_rgba(248,113,113,0.35)] transition-colors hover:border-red-500 hover:bg-red-600/80"
+              className="flex h-24 items-center justify-center rounded-3xl border border-white/10 bg-black/40 px-4 text-center text-sm font-semibold text-white shadow-[0_18px_40px_rgba(59,130,246,0.35)] transition-colors hover:border-blue-500 hover:bg-blue-600/80"
             >
               {agent}
             </motion.a>
@@ -150,7 +150,7 @@ export default function AgentsPage() {
 
       <section className="mx-auto max-w-5xl px-4 pb-24">
         <div className="text-center">
-          <span className="inline-flex items-center rounded-full bg-red-600/20 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-red-200">
+          <span className="inline-flex items-center rounded-full bg-blue-600/20 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-blue-200">
             Ready to use agents
           </span>
           <h2 className="mt-6 text-3xl font-bold md:text-4xl">
@@ -169,7 +169,7 @@ export default function AgentsPage() {
               key={agent}
               href="/contact"
               whileHover={{ y: -4 }}
-              className="flex h-24 items-center justify-center rounded-3xl border border-red-500/70 bg-black/50 px-4 text-center text-sm font-semibold text-white shadow-[0_18px_40px_rgba(248,113,113,0.45)] transition-colors hover:bg-red-600"
+              className="flex h-24 items-center justify-center rounded-3xl border border-blue-500/70 bg-black/50 px-4 text-center text-sm font-semibold text-white shadow-[0_18px_40px_rgba(59,130,246,0.45)] transition-colors hover:bg-blue-600"
             >
               {agent}
             </motion.a>

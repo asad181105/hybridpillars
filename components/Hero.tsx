@@ -14,14 +14,14 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <Navbar variant="floating" />
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-950 via-black to-black">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-black to-black">
         {/* Grid Pattern */}
         <div 
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(248, 113, 113, 0.15) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(248, 113, 113, 0.15) 1px, transparent 1px)
+              linear-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(59, 130, 246, 0.15) 1px, transparent 1px)
             `,
             backgroundSize: '50px 50px',
           }}
@@ -38,7 +38,7 @@ export function Hero() {
           }}
           style={{
             backgroundImage:
-              "radial-gradient(circle at 20% 50%, rgba(248, 113, 113, 0.25) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(127, 29, 29, 0.25) 0%, transparent 50%)",
+              "radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.25) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(30, 64, 175, 0.25) 0%, transparent 50%)",
             backgroundSize: "200% 200%",
           }}
         />
@@ -52,7 +52,7 @@ export function Hero() {
           return (
             <motion.div
               key={i}
-              className="absolute w-1 h-1 bg-red-400 rounded-full"
+              className="absolute w-1 h-1 bg-blue-400 rounded-full"
               initial={{
                 x: randomX,
                 y: randomY,
@@ -94,24 +94,24 @@ export function Hero() {
                     repeatDelay: 2,
                   }}
                 >
-                  <Sparkles className="w-16 h-16 text-red-500" />
+                  <Sparkles className="w-16 h-16 text-blue-500" />
                 </motion.div>
                 <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
-                  <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-300 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300 bg-clip-text text-transparent">
                     Reimagine Work with
                   </span>
                   <br />
-                  <span className="text-5xl md:text-[6rem] font-bold mt-1 leading-none bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  <span className="text-5xl md:text-[6rem] font-bold mt-1 leading-none bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                     Autonomous AI Agents
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-red-100 text-center max-w-3xl mb-10">
+                <p className="text-xl md:text-2xl text-blue-100 text-center max-w-3xl mb-10">
                   hybridpillars builds domain-specific AI agents that transform how teams sell, support, and scale.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <MotionLink
                     href="/contact"
-                    className="px-8 py-4 bg-gradient-to-r from-red-500 to-red-700 rounded-lg font-semibold text-lg flex items-center gap-2 hover:shadow-lg hover:shadow-red-500/50 transition-all"
+                    className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg font-semibold text-lg flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/50 transition-all"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -120,7 +120,7 @@ export function Hero() {
                   </MotionLink>
                   <MotionLink
                     href="/contact"
-                    className="px-8 py-4 border-2 border-red-400 rounded-lg font-semibold text-lg backdrop-blur-sm bg-black/40 hover:bg-red-600/80 transition-all"
+                    className="px-8 py-4 border-2 border-blue-400 rounded-lg font-semibold text-lg backdrop-blur-sm bg-black/40 hover:bg-blue-600/80 transition-all"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

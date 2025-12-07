@@ -77,13 +77,13 @@ export function Navbar({ variant = "static" }: { variant?: NavbarVariant }) {
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/contact"
-            className="rounded-full border border-red-400 px-4 py-2 text-sm font-semibold text-white hover:bg-red-600 transition-colors"
+            className="rounded-full border border-blue-400 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-600 transition-colors"
           >
             Try for free
           </Link>
           <Link
             href="/contact"
-            className="rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-500 transition-colors"
+            className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-500 transition-colors"
           >
             Book a demo
           </Link>
@@ -121,14 +121,14 @@ export function Navbar({ variant = "static" }: { variant?: NavbarVariant }) {
               <div className="flex items-center justify-between gap-2 px-6 py-4">
                 <Link
                   href="/contact"
-                  className="flex-1 rounded-full border border-red-400 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-red-600 transition-colors"
+                  className="flex-1 rounded-full border border-blue-400 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-blue-600 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Try for free
                 </Link>
                 <Link
                   href="/contact"
-                  className="flex-1 rounded-full bg-red-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-red-500 transition-colors"
+                  className="flex-1 rounded-full bg-blue-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-blue-500 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Book a demo

@@ -18,49 +18,49 @@ const agents = [
     category: "Sales & Marketing",
     icon: TrendingUp,
     description: "Automates LinkedIn & email outreach with smart personalization.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "VoiceCare Agent",
     category: "Customer Support",
     icon: Headphones,
     description: "AI voice & chat caller for handling customer queries 24/7.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "Insight Agent",
     category: "Business Intelligence",
     icon: BarChart3,
     description: "Analyzes company data & dashboards; generates daily insights.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "OpsFlow Agent",
     category: "Operations",
     icon: Workflow,
     description: "Automates internal task coordination & workflow optimization.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "Talent Agent",
     category: "HR & Recruitment",
     icon: Users,
     description: "Screens candidates, schedules interviews, and analyzes resumes.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "Eduyar / Sahayak Agent",
     category: "Education",
     icon: GraduationCap,
     description: "Automates attendance, report generation, and parent communication.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     name: "ReviewSense Agent",
     category: "Product Analytics",
     icon: Star,
     description: "Extracts insights from product reviews across platforms.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
 ];
 
@@ -86,12 +86,12 @@ export function AIAgents() {
               repeatDelay: 2,
             }}
           >
-            <Sparkles className="w-12 h-12 text-red-500 mx-auto" />
+            <Sparkles className="w-12 h-12 text-blue-500 mx-auto" />
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             AI Agents Marketplace
           </h2>
-          <p className="text-xl text-red-100 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Modular AI agent systems that plug into existing businesses, reducing costs and increasing productivity.
           </p>
         </motion.div>
@@ -117,12 +117,12 @@ export function AIAgents() {
                   <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${agent.gradient} p-3 mb-4 flex items-center justify-center`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <span className="text-sm text-red-100 mb-2 block">{agent.category}</span>
+                  <span className="text-sm text-blue-100 mb-2 block">{agent.category}</span>
                   <h3 className="text-2xl font-bold mb-3 text-white">{agent.name}</h3>
                   <p className="text-gray-300 mb-4">{agent.description}</p>
                   <motion.a
                     href="/contact"
-                    className="inline-flex items-center text-sm font-semibold text-red-400 hover:text-red-200 transition-colors"
+                    className="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-blue-200 transition-colors"
                     whileHover={{ x: 5 }}
                   >
                     Learn More →

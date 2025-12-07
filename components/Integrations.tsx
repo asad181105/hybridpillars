@@ -14,7 +14,7 @@ import {
 
 const integrations = [
   { name: "Slack", icon: Slack, color: "text-purple-400" },
-  { name: "Gmail", icon: Mail, color: "text-red-400" },
+  { name: "Gmail", icon: Mail, color: "text-blue-400" },
   { name: "LinkedIn", icon: Linkedin, color: "text-blue-400" },
   { name: "Zapier", icon: Zap, color: "text-orange-400" },
   { name: "Notion", icon: FileText, color: "text-gray-400" },

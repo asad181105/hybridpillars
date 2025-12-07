@@ -54,7 +54,7 @@ export default function PricingPage() {
 
       <section className="mx-auto max-w-6xl px-4 pb-24 pt-20">
         <div className="text-center">
-          <span className="inline-flex items-center rounded-full bg-red-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-red-200">
+          <span className="inline-flex items-center rounded-full bg-blue-600/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-blue-200">
             Pricing
           </span>
           <h1 className="mt-6 text-4xl font-bold md:text-5xl">
@@ -71,7 +71,7 @@ export default function PricingPage() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 text-left shadow-[0_30px_90px_rgba(127,29,29,0.45)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 ${
+              className={`relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 text-left shadow-[0_30px_90px_rgba(30,64,175,0.45)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 ${
                 plan.highlight ? "ring-2 ring-blue-400/60" : ""
               }`}
             >
@@ -99,8 +99,8 @@ export default function PricingPage() {
                 href="/contact"
                 className={`mt-10 inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-colors ${
                   plan.highlight
-                    ? "bg-red-600 text-white hover:bg-red-500"
-                    : "border border-red-400 text-white hover:bg-red-600/80"
+                    ? "bg-blue-600 text-white hover:bg-blue-500"
+                    : "border border-blue-400 text-white hover:bg-blue-600/80"
                 }`}
               >
                 {plan.cta}

@@ -8,25 +8,25 @@ const values = [
     icon: Target,
     title: "Our Vision",
     description: "Democratizing AI automation for every business, making advanced AI agents accessible to teams of all sizes.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     icon: Zap,
     title: "Innovation",
     description: "Cutting-edge AI technology that adapts to your business needs and scales with your growth.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     icon: Users,
     title: "Partnership",
     description: "We work closely with our clients to understand their unique challenges and deliver tailored solutions.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
   {
     icon: Globe,
     title: "Impact",
     description: "Transforming workflows across industries, reducing costs, and increasing productivity worldwide.",
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-blue-500 to-blue-700",
   },
 ];
 
@@ -41,7 +41,7 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             About hybridpillars
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">

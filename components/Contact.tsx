@@ -49,7 +49,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-20 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-950/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/20 to-transparent" />
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Get Started Today
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -77,7 +77,7 @@ export function Contact() {
           >
             <div>
               <h3 className="text-2xl font-bold mb-6 text-white">Let&apos;s Connect</h3>
-            <p className="text-red-100 mb-8">
+            <p className="text-blue-100 mb-8">
                 Schedule a demo or reach out to learn more about how hybridpillars can automate your business workflows.
               </p>
             </div>
@@ -92,8 +92,8 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-sm text-red-100">Email</p>
-                  <p className="text-white group-hover:text-red-400 transition-colors">contact@hybridpillars.com</p>
+                  <p className="text-sm text-blue-100">Email</p>
+                  <p className="text-white group-hover:text-blue-400 transition-colors">contact@hybridpillars.com</p>
                 </div>
               </motion.a>
 
@@ -102,7 +102,7 @@ export function Contact() {
                 className="flex items-center space-x-4 p-4 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm hover:border-white/30 transition-all group"
                 whileHover={{ x: 5 }}
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-red-500 to-red-700 p-3 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 p-3 flex items-center justify-center">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -112,7 +112,7 @@ export function Contact() {
               </motion.a>
 
               <div className="flex items-center space-x-4 p-4 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-red-500 to-red-700 p-3 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 p-3 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -143,7 +143,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-red-500/60 text-white placeholder-red-200/70 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-blue-500/60 text-white placeholder-blue-200/70 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
                   placeholder="Your name"
                 />
               </div>
@@ -158,7 +158,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-red-500/60 text-white placeholder-red-200/70 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-blue-500/60 text-white placeholder-blue-200/70 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
                   placeholder="your.email@company.com"
                 />
               </div>
@@ -172,7 +172,7 @@ export function Contact() {
                   id="company"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-red-500/60 text-white placeholder-red-200/70 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-blue-500/60 text-white placeholder-blue-200/70 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
                   placeholder="Your company"
                 />
               </div>
@@ -187,7 +187,7 @@ export function Contact() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-red-500/60 text-white placeholder-red-200/70 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-blue-500/60 text-white placeholder-blue-200/70 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all resize-none"
                   placeholder="Tell us about your needs..."
                 />
               </div>
@@ -195,7 +195,7 @@ export function Contact() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 bg-gradient-to-r from-red-500 to-red-700 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-red-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-blue-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               >

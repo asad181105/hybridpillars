@@ -16,7 +16,7 @@ const industries = [
   { name: "Sales & Marketing", icon: TrendingUp, color: "from-blue-500 to-cyan-500" },
   { name: "Education", icon: GraduationCap, color: "from-purple-500 to-pink-500" },
   { name: "Retail", icon: ShoppingBag, color: "from-green-500 to-emerald-500" },
-  { name: "Healthcare", icon: Stethoscope, color: "from-red-500 to-pink-500" },
+  { name: "Healthcare", icon: Stethoscope, color: "from-blue-500 to-cyan-500" },
   { name: "Finance", icon: Building2, color: "from-yellow-500 to-orange-500" },
   { name: "Manufacturing", icon: Factory, color: "from-indigo-500 to-purple-500" },
   { name: "Technology", icon: Code, color: "from-cyan-500 to-blue-500" },
